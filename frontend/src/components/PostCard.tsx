@@ -29,7 +29,6 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
           className="card-image"
           loading="lazy"
           onError={(e) => {
-            // Fallback bei Bildladungsfehler
             const target = e.target as HTMLImageElement;
             target.src = `https://via.placeholder.com/800x400/3182ce/ffffff?text=${encodeURIComponent(post.title.substring(0, 30))}`;
           }}

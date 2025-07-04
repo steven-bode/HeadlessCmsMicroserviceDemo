@@ -65,7 +65,7 @@ router.get('/', async (req: Request, res: Response) => {
 
 /**
  * GET /api/posts/:id
- * Einzelnen Blog Post nach ID abrufen
+ * Einzelnen Blog Post nach ID
  */
 router.get('/:id', async (req: Request, res: Response) => {
   try {
@@ -103,7 +103,7 @@ router.get('/:id', async (req: Request, res: Response) => {
 
 /**
  * GET /api/posts/tag/:tag
- * Posts nach Tag filtern
+ * Posts nach Tag
  */
 router.get('/tag/:tag', async (req: Request, res: Response) => {
   try {

@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             </h3>
             <p style={{ 
               lineHeight: '1.6',
-              color: 'var(--color-gray-400)'
+              color: 'var(--color-gray-600)'
             }}>
               Eine moderne Demonstration von API-First Development 
               und Microservice-Architektur mit React und Node.js.
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             <ul style={{ 
               listStyle: 'none', 
               padding: 0,
-              color: 'var(--color-gray-400)'
+              color: 'var(--color-gray-600)'
             }}>
               <li style={{ marginBottom: '0.5rem' }}>React + TypeScript</li>
               <li style={{ marginBottom: '0.5rem' }}>Node.js + Express</li>
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
                 Backend API
               </a>
               <a 
-                href="https://github.com/stevenbode/headless-cms-microservice-demo" 
+                href="https://github.com/steven-bode/HeadlessCmsMicroserviceDemo" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{ 
@@ -110,14 +110,14 @@ const Footer: React.FC = () => {
           borderTop: '1px solid var(--color-gray-700)',
           paddingTop: '1.5rem',
           textAlign: 'center',
-          color: 'var(--color-gray-500)',
+          color: 'var(--color-gray-200)',
           fontSize: '0.875rem'
         }}>
           <p>
             © 2024 Steven Bode - Headless CMS Demo | 
             Erstellt für Bewerbungszwecke | 
             <a 
-              href="https://github.com/stevenbode" 
+              href="https://github.com/steven-bode" 
               target="_blank" 
               rel="noopener noreferrer"
               style={{ 

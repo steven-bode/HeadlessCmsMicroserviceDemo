@@ -17,21 +17,16 @@ class ErrorBoundary extends Component<Props, State> {
   }
 
   static getDerivedStateFromError(_error: Error): State {
-    // Update state so the next render will show the fallback UI
     return { hasError: true };
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    // Log error to console for debugging
     console.error('ErrorBoundary caught an error:', error, errorInfo);
     
     this.setState({
       error,
       errorInfo
     });
-
-    // Here you could also log the error to an error reporting service
-    // like Sentry, LogRocket, etc.
   }
 
   render() {
@@ -65,7 +60,7 @@ class ErrorBoundary extends Component<Props, State> {
             <p style={{
               fontSize: '1.125rem',
               marginBottom: '2rem',
-              color: 'var(--color-gray-600)'
+              color: 'var(--color-gray-800)'
             }}>
               Es ist ein unerwarteter Fehler aufgetreten. 
               Das sollte normalerweise nicht passieren.

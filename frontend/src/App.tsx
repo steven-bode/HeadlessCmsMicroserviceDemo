@@ -1,4 +1,3 @@
-// React import entfernt da nur JSX verwendet wird
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import PostList from './components/PostList'
@@ -32,7 +31,7 @@ function NotFound() {
     <div style={{ 
       textAlign: 'center', 
       padding: '4rem 0',
-      color: 'var(--color-gray-600)'
+      color: 'var(--color-gray-800)'
     }}>
       <h1 style={{ 
         fontSize: '3rem', 

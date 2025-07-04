@@ -9,16 +9,16 @@
   --color-error: #e53e3e;
   
   /* Graustufen */
-  --color-gray-50: #f7fafc;
-  --color-gray-100: #edf2f7;
-  --color-gray-200: #e2e8f0;
-  --color-gray-300: #cbd5e0;
-  --color-gray-400: #a0aec0;
-  --color-gray-500: #718096;
-  --color-gray-600: #4a5568;
-  --color-gray-700: #2d3748;
-  --color-gray-800: #1a202c;
-  --color-gray-900: #171923;
+  --color-gray-50: #ffffff;   /* Weiß für Hintergründe */
+  --color-gray-100: #f7fafc;  /* Sehr hell für Karten */
+  --color-gray-200: #e2e8f0;  /* Hell für Borders */
+  --color-gray-300: #cbd5e0;  /* Hell für inactive Elemente */
+  --color-gray-400: #1a1a1a;  /* Fast schwarz für Text */
+  --color-gray-500: #111111;  /* Fast schwarz für Text */
+  --color-gray-600: #0a0a0a;  /* Praktisch schwarz für Text */
+  --color-gray-700: #050505;  /* Praktisch schwarz für Text */
+  --color-gray-800: #000000;  /* Schwarz für Text */
+  --color-gray-900: #000000;  /* Schwarz für Text */
   
   /* Abstände */
   --spacing-xs: 0.25rem;
@@ -65,8 +65,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
-  color: var(--color-gray-800);
-  background-color: var(--color-gray-50);
+  color: #000000;
+  background-color: #ffffff !important;
 }
 
 /* Typography */
@@ -86,7 +86,7 @@ h6 { font-size: 1rem; }
 
 p {
   margin: 0 0 var(--spacing-md) 0;
-  color: var(--color-gray-700);
+  color: #000000 !important;
 }
 
 a {
@@ -108,7 +108,7 @@ a:hover {
 }
 
 .header {
-  background-color: white;
+  background-color: #ffffff !important;
   border-bottom: 1px solid var(--color-gray-200);
   box-shadow: var(--shadow-sm);
   position: sticky;
@@ -137,7 +137,7 @@ a:hover {
 
 .nav-link {
   font-weight: 500;
-  color: var(--color-gray-600);
+  color: var(--color-gray-800);
   transition: color 0.2s ease;
 }
 
@@ -154,7 +154,7 @@ a:hover {
 
 /* Card Components */
 .card {
-  background: white;
+  background: #ffffff !important;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   overflow: hidden;
@@ -180,11 +180,23 @@ a:hover {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: var(--spacing-sm);
-  color: var(--color-gray-900);
+  color: #000000 !important;
+}
+
+.card-title a,
+.card-title a:visited,
+.card-title a:link {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+.card-title a:hover {
+  color: var(--color-primary) !important;
+  text-decoration: underline !important;
 }
 
 .card-excerpt {
-  color: var(--color-gray-600);
+  color: #000000 !important;
   margin-bottom: var(--spacing-md);
   line-height: 1.6;
 }
@@ -194,7 +206,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   font-size: 0.875rem;
-  color: var(--color-gray-500);
+  color: #000000 !important;
 }
 
 /* Tags */
@@ -206,8 +218,8 @@ a:hover {
 }
 
 .tag {
-  background-color: var(--color-gray-100);
-  color: var(--color-gray-700);
+  background-color: #f0f0f0 !important;
+  color: #000000 !important;
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
   font-size: 0.75rem;
@@ -327,6 +339,11 @@ a:hover {
   background-color: var(--color-primary);
   color: white;
   border-color: var(--color-primary);
+}
+
+/* Search Input Focus Effect */
+.search-input:focus {
+  border-color: var(--color-primary) !important;
 }
 
 /* Responsive Design */

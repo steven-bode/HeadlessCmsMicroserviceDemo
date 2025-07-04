@@ -5,9 +5,7 @@ export interface ApiError extends Error {
   isOperational?: boolean;
 }
 
-/**
- * Globaler Error Handler für Express
- */
+
 export const errorHandler = (
   err: ApiError,
   req: Request,
@@ -17,7 +15,6 @@ export const errorHandler = (
   const statusCode = err.statusCode || 500;
   const message = err.message || 'Interner Serverfehler';
 
-  // Detaillierte Logs für Entwicklung
   if (process.env.NODE_ENV !== 'production') {
     console.error('API Fehler:', {
       error: err.message,

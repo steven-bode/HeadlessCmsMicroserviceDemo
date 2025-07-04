@@ -119,7 +119,7 @@ const PostDetail: React.FC = () => {
           fontSize: '2.5rem',
           marginBottom: '1rem',
           lineHeight: '1.2',
-          color: 'var(--color-gray-900)'
+          color: 'var(--color-gray-200)'
         }}>
           {post.title}
         </h1>
@@ -127,7 +127,7 @@ const PostDetail: React.FC = () => {
         {/* Excerpt */}
         <p style={{
           fontSize: '1.25rem',
-          color: 'var(--color-gray-600)',
+          color: 'var(--color-gray-200)',
           marginBottom: '1.5rem',
           fontStyle: 'italic'
         }}>
@@ -143,7 +143,7 @@ const PostDetail: React.FC = () => {
           borderTop: '1px solid var(--color-gray-200)',
           borderBottom: '1px solid var(--color-gray-200)',
           fontSize: '0.9rem',
-          color: 'var(--color-gray-600)'
+          color: 'var(--color-gray-200)'
         }}>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <span><strong>{post.author}</strong></span>
@@ -175,7 +175,7 @@ const PostDetail: React.FC = () => {
         paddingTop: '2rem',
         textAlign: 'center'
       }}>
-        <p style={{ marginBottom: '1.5rem', color: 'var(--color-gray-600)' }}>
+        <p style={{ marginBottom: '1.5rem', color: 'var(--color-gray-800)' }}>
           Hat Ihnen dieser Artikel gefallen?
         </p>
         

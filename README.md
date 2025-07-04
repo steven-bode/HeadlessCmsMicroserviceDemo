@@ -22,7 +22,6 @@
 - [Tests & Qualitätssicherung](#tests--qualitätssicherung)
 - [Entwicklung](#entwicklung)
 - [Deployment](#deployment)
-- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [Lizenz](#lizenz)
 
@@ -423,31 +422,6 @@ FRONTEND_URL=https://your-domain.com
 # Frontend (.env)
 VITE_API_BASE_URL=https://api.your-domain.com
 ```
-
----
-
-## Screenshots
-
-### **Homepage mit Blog Posts**
-![Homepage](docs/images/homepage.png)
-
-*Responsive Grid-Layout mit modernem Design*
-
-### **Post-Detail-Ansicht**
-![Post Detail](docs/images/post-detail.png)
-
-*Vollständige Artikel-Ansicht mit Syntax-Highlighting*
-
-### **Search & Filter Interface**
-![Search Filter](docs/images/search-filter.png)
-
-*Erweiterte Suche mit Live-Updates*
-
-### **API Explorer**
-![API Explorer](docs/images/api-explorer.png)
-
-*Interaktive API-Dokumentation*
-
 ---
 
 ## Contributing
@@ -499,7 +473,7 @@ copies or substantial portions of the Software.
 **Steven Bode**  
 - GitHub: [https://github.com/steven-bode](https://github.com/steven-bode)
 - LinkedIn: [https://www.linkedin.com/in/steven-timothy-bode](https://www.linkedin.com/in/steven-timothy-bode-998b2218b/)
-- E-Mail: [mailsteven-bo.de](mailto:mailsteven-bo.de)
+- E-Mail: [mail@steven-bo.de](mailto:mail@steven-bo.de)
 
 > *Erstellt als Showcase-Projekt für Bewerbungszwecke*  
 > *Demonstriert moderne Webentwicklung mit TypeScript, React und Node.js*

@@ -61,7 +61,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({
           </h3>
           <p style={{ 
             margin: '0.25rem 0 0 0', 
-            color: 'var(--color-gray-600)',
+            color: 'var(--color-gray-800)',
             fontSize: '0.9rem'
           }}>
             {totalPosts} Artikel verfügbar
@@ -85,6 +85,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({
             placeholder="Nach Titel, Inhalt oder Autor suchen..."
             value={filters.search}
             onChange={handleSearchChange}
+            className="search-input"
             style={{
               width: '100%',
               padding: '0.75rem',
@@ -93,12 +94,6 @@ const SearchFilter: React.FC<SearchFilterProps> = ({
               fontSize: '1rem',
               transition: 'border-color 0.2s ease',
               outline: 'none'
-            }}
-            onFocus={(e) => {
-              e.target.style.borderColor = 'var(--color-primary)'
-            }}
-            onBlur={(e) => {
-              e.target.style.borderColor = 'var(--color-gray-200)'
             }}
           />
         </div>
@@ -119,7 +114,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({
               display: 'block',
               marginBottom: '0.5rem',
               fontWeight: '500',
-              color: 'var(--color-gray-700)',
+              color: 'var(--color-gray-800)',
               fontSize: '0.875rem'
             }}>
               Nach Tag filtern
@@ -145,7 +140,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({
               display: 'block',
               marginBottom: '0.5rem',
               fontWeight: '500',
-              color: 'var(--color-gray-700)',
+              color: 'var(--color-gray-800)',
               fontSize: '0.875rem'
             }}>
               Nach Autor filtern
@@ -198,7 +193,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({
         }}>
           <span style={{
             fontSize: '0.875rem',
-            color: 'var(--color-gray-600)',
+            color: 'var(--color-gray-800)',
             marginRight: '0.5rem'
           }}>
             Aktive Filter:

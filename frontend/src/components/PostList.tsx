@@ -86,7 +86,7 @@ const PostList: React.FC = () => {
         </h1>
         <p style={{ 
           fontSize: '1.25rem', 
-          color: 'var(--color-gray-600)',
+          color: 'var(--color-gray-800)',
           maxWidth: '600px',
           margin: '0 auto 2rem'
         }}>
@@ -109,7 +109,7 @@ const PostList: React.FC = () => {
             API Explorer
           </a>
           <a 
-            href="https://github.com/stevenbode/headless-cms-microservice-demo" 
+            href="https://github.com/steven-bode/HeadlessCmsMicroserviceDemo" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn btn-secondary"
@@ -164,7 +164,7 @@ const PostList: React.FC = () => {
         <div style={{ 
           textAlign: 'center', 
           padding: '3rem 0',
-          color: 'var(--color-gray-600)'
+          color: 'var(--color-gray-800)'
         }}>
           <h3>Keine Posts gefunden</h3>
           <p>Versuchen Sie es mit anderen Suchkriterien.</p>

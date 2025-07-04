@@ -28,7 +28,7 @@ const Header: React.FC = () => {
               API Docs
             </a>
             <a 
-              href="https://github.com/stevenbode/headless-cms-microservice-demo" 
+              href="https://github.com/steven-bode/HeadlessCmsMicroserviceDemo" 
               target="_blank" 
               rel="noopener noreferrer"
               className="nav-link"
